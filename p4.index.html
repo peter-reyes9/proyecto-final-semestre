@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vida marina</title>
+    <link rel="stylesheet" href="../css/p4.index.css">
+</head>
+
+<body>
+    <header>
+        <div class="content">
+            <div class="menu container">
+                <a href="p4.index.html" class="logo">Proyecto</a>
+                <nav class="navbar">
+                    <ul>
+                        <li><a>pedro reyes sagardoy</a></li>
+                        <li><a>vida marina</a></li>
+                        <li><a>viva mi novia</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <h1 class="titulo">especies y sus contribuciones</h1>
+    <section class="intro">
+        <div class="container">
+            <h2>La importancia de la vida marina</h2>
+            <p>
+                Los océanos cubren más del 70% de nuestro planeta y albergan una increíble variedad de especies. Cada
+                una juega un papel esencial en el equilibrio de los ecosistemas marinos. En esta página descubrirás
+                algunas
+                de estas especies y cómo contribuyen a la salud del océano y del planeta.
+            </p>
+        </div>
+    </section>
+    <br>
+    <section class="animales">
+        <br>
+        <h2>Especies marinas y sus funciones</h2>
+
+        <div class="animal">
+            <img src="../img/delfin.jpg" alt="Delfín">
+            <div class="info">
+                <h3>Delfín</h3>
+                <p>Ayuda a mantener el equilibrio de las cadenas alimenticias y es un indicador de la salud del
+                    ecosistema marino.</p>
+            </div>
+        </div>
+
+        <div class="animal">
+            <img src="../img/estrella.jpg" alt="Estrella de mar">
+            <div class="info">
+                <h3>Estrella de mar</h3>
+                <p>Controla la población de otros animales y mantiene el equilibrio del ecosistema del fondo marino.</p>
+            </div>
+        </div>
+
+        <div class="animal">
+            <img src="../img/coral.jpg" alt="Coral">
+            <div class="info">
+                <h3>Coral</h3>
+                <p>Proporciona hábitat a miles de especies y protege las costas de la erosión.</p>
+            </div>
+        </div>
+
+        <div class="animal">
+            <img src="../img/tortuga.jpg" alt="Tortuga marina">
+            <div class="info">
+                <h3>Tortuga marina</h3>
+                <p>Contribuye a la salud de los pastos marinos y ayuda a mantener el equilibrio de los ecosistemas
+                    costeros.</p>
+            </div>
+        </div>
+
+        <div class="animal">
+            <img src="../img/pez.jpg" alt="Pez payaso">
+            <div class="info">
+                <h3>Pez payaso</h3>
+                <p>Forma simbiosis con las anémonas de mar, ayudando a mantener la salud de los arrecifes de coral.</p>
+            </div>
+        </div>
+
+        <div class="animal">
+            <img src="../img/ballena.jpg" alt="Ballena">
+            <div class="info">
+                <h3>Ballena</h3>
+                <p>Ayuda a regular el clima al transportar nutrientes desde las profundidades del océano a la
+                    superficie.</p>
+            </div>
+        </div>
+    </section>
+
+    <canvas id="canvas">Your browser doesn't support canvas</canvas>
+
+    <!-- SVG Goo filter from: https://css-tricks.com/gooey-effect/ -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none;">
+        <defs>
+            <filter id="shadowed-goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                    result="goo" />
+                <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+                <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2"
+                    result="shadow" />
+                <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+                <feBlend in2="shadow" in="goo" result="goo" />
+                <feBlend in2="goo" in="SourceGraphic" result="mix" />
+            </filter>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                    result="goo" />
+                <feBlend in2="goo" in="SourceGraphic" result="mix" />
+            </filter>
+        </defs>
+    </svg>
+
+    <script src="../javascript/p1.index.js"></script>
+</body>
+
+</html>
