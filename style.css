@@ -9,6 +9,22 @@ html {
     height: 100%;
     box-sizing: border-box;
 }
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Esto lo pone detrás del contenido */
+  display: block;
+}
 
 .logo {
     font-size: 25px;
