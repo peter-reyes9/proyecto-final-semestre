@@ -12,3 +12,5 @@ Es una página web que muestra información sobre animales, usando HTML y CSS.
 
 ## 🧑‍💻 Autor
 Pedro Reyes Sagardoy
+
+https://peter-reyes9.github.io/proyecto-final-semestre/
